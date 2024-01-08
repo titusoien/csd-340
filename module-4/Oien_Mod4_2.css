@@ -1,11 +1,13 @@
 #container {
     text-align: center;
+    max-width: 1200px; /* Set a max-width for the container */
+    margin: auto; /* Center the container */
 }
 
 #image-gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* Create three columns of equal width */
+    gap: 20px; /* Space between the grid items */
     margin-top: 10%;
 }
 
@@ -13,12 +15,26 @@ h1 {
     color: rgba(255, 0, 0, 0.8);
 }
 
-h3 {
-    color: rgba(0, 255, 0, 0.8);
+h3, figcaption {
+    margin: 10px 0; /* Space above and below the headings and figcaption */
 }
 
-figure {
-    text-align: center;
+#image-gallery figure {
+    border: 3px solid black; /* Add border around the figure */
+    padding: 5px; /* Add some spacing around the image */
+    height: 300px; /* Fixed height for the figure */
+    display: flex; /* Use flexbox to center the image vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background: #fff; /* Background color for the figure */
+}
+
+#image-gallery img {
+    width: auto; /* Auto width to maintain aspect ratio */
+    max-width: 100%; /* Maximum width to fit container */
+    max-height: 100%; /* Maximum height to fit container */
+    height: auto; /* Auto height to maintain aspect ratio */
+    object-fit: cover; /* Cover the area of the figure */
 }
 
 figcaption {
@@ -27,9 +43,8 @@ figcaption {
     color: rgba(0, 0, 255, 0.8);
 }
 
-@media (max-width: 600px) {
-    #image-gallery {
-        grid-template-columns: 1fr;
-    }
+#return-link {
+    text-align: center;
+    margin-top: 20px;
 }
 
