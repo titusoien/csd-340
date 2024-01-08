@@ -1,25 +1,28 @@
-#image-gallery {
+#image-gallery .side-by-side {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px; /* Adjust the space between columns */
+    grid-template-columns: repeat(3, 1fr); /* Create three columns of equal width */
+    gap: 20px; /* Space between the grid items */
     margin-top: 10%;
-    text-align: center; /* Center-align text for all child elements */
 }
 
 #image-gallery .side-by-side > div {
-    margin: 0; /* Remove any default margins */
+    text-align: center; /* Center-align text for all child elements */
 }
 
-h1, h3, figcaption {
-    margin: 0 0 10px 0; /* Add some space below the headings and figcaption */
+h1 {
+    text-align: center;
+    color: rgba(255, 0, 0, 0.8);
+}
+
+h3, figcaption {
+    margin: 0 0 10px 0; /* Space below the headings and figcaption */
 }
 
 #image-gallery img {
-    width: 100%; /* Make the image width responsive to the container size */
+    width: 100%; /* Responsive to container size */
     max-width: 200px; /* Maximum width for all images */
-    height: auto; /* Keep the aspect ratio of the images */
-    display: block; /* Display block to enable margin auto to work */
-    margin: 0 auto 10px; /* Center-align images and add space below */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
 }
 
 figcaption {
@@ -29,6 +32,13 @@ figcaption {
 }
 
 #return-link {
-    text-align: center; /* Center-align the back link */
-    margin-top: 20px; /* Add some space above the back link */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 600px) {
+    #image-gallery .side-by-side {
+        grid-template-columns: 1fr; /* Stack the items in a single column on small screens */
+    }
 }
