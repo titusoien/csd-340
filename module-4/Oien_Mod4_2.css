@@ -39,6 +39,8 @@ figcaption {
     font-size: 0.75em;
     color: rgba(0, 0, 255, 0.8);
     display: block; /* Ensure figcaption is treated as a block for centering */
+    padding: 2px;
+    text-align: center;
 }
 
 #return-link {
