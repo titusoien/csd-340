@@ -45,5 +45,6 @@ figcaption {
 #return-link {
     float: right;
     margin-top: 20px;
+    width: 50px;
 }
 
