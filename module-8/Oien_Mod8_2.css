@@ -1,1 +1,82 @@
+header {
+    background-color: #007bff; /* A deep blue background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
+h1 {
+    font-weight: 400;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #333; /* A dark grey background for navbar */
+    border-bottom: 15px solid #ff4500; /* A strong orange border */
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white; /* Text color for navbar links */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #ddd; /* Light grey background on hover */
+    color: black; /* Black text on hover */
+}
+
+#container {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: #6c757d; /* A muted grey for card title */
+    font-weight: 400;
+}
+
+.card-content {
+    padding: 2px 16px;
+}
+
+footer {
+    background-color: #007bff; /* Same blue color as header */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    font-weight: 400;
+    text-align: right;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
