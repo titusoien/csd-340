@@ -19,13 +19,16 @@
             background-size: cover;
         }
     </style>
-</head>
 <body>
 
-<div id="image1" class="hover-image" style="background-image: url('image1.jpg');"></div>
-<div id="image2" class="hover-image" style="background-image: url('image2.jpg');"></div>
+<img id="image1" src="images/120px-AutumnIn_Oakridge.jpg" alt="Autumn Landscape" 
+     onmouseover="hoverImage('image1', 'images/120px-Las-soltysowicki_008.jpg')" 
+     onmouseout="unhoverImage('image1', 'images/120px-AutumnIn_Oakridge.jpg')">
 
-<script src="script.js"></script>
+<img id="image2" src="images/120px-Winter_im_Oberdorf.jpg" alt="Winter Landscape" 
+     onmouseover="hoverImage('image2', 'images/Frühlingslandschft_Aaretal_Schweiz.jpg')" 
+     onmouseout="unhoverImage('image2', 'images/120px-Winter_im_Oberdorf.jpg')">
+
 </body>
 </html>
 
