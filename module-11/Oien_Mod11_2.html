@@ -11,3 +11,40 @@
     <meta http-equiv="pragma"
         content="no-cache" />
    <h1>Assignment 11.2 - JavaScript - Part 3</h1>
+<script>
+let itemsArray = [];
+
+function addItem() {
+    const item = document.getElementById('itemInput').value;
+    itemsArray.push(item);
+    alert(`Added "${item}" to position ${itemsArray.length}.`);
+    document.getElementById('itemInput').value = ''; // Clear input box after adding
+}
+
+function deleteLastEntry() {
+    if (itemsArray.length > 0) {
+        itemsArray.pop();
+        alert('Last entry deleted.');
+    } else {
+        alert('The array is already empty.');
+    }
+}
+
+function displayItems() {
+    let displayText = 'Array contents:\n';
+    itemsArray.forEach((item, index) => {
+        displayText += `${index + 1}. ${item}\n`;
+    });
+    alert(displayText);
+}
+</script>
+</head>
+<body>
+
+<input type="text" id="itemInput" placeholder="Enter item here">
+<button onclick="addItem()">Add</button>
+<button onclick="deleteLastEntry()">Delete Last Entry</button>
+<button onclick="displayItems()">Display</button>
+
+</body>
+</html>
